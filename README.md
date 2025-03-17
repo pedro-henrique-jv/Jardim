@@ -25,7 +25,7 @@ Este projeto consiste em um **site interativo** dedicado ao Jardim Botânico, co
 
 ## Tecnologias e Ferramentas
 
-- **Frontend**: HTML, CSS, JavaScript (React ou Vue.js)
+- **Frontend**: HTML, CSS, JavaScript.
 - **Backend**: PHP (para gerenciar o sistema de pontuação e as informações dinâmicas)
 - **Banco de Dados**: Mysql ou Firebase (para armazenar dados sobre usuários, espécies e pontuação)
 - **QR Codes**: Gerador de QR codes para associar cada código a uma página do site
