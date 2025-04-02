@@ -8,7 +8,7 @@ body {
     background-image: url('../assets/fundo.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -24,12 +24,6 @@ body {
     height: 120px;
     width: auto;
     border-radius: 60px;
-}
-@media (max-width: 768px) {
-    .navbar-brand img {
-        max-height: 50px; 
-        width: auto;
-    }
 }
 
 .navbar-nav {
@@ -54,4 +48,46 @@ body {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    /* deixa igual ao cabeçalho */
+    /* background-color: transparent !important;
+    backdrop-filter: blur(10px); */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 35%;
+    color: white;
+}
+
+.plant-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.footer-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    /* deixa igual ao cabeçalho */
+    /* background-color: transparent !important;
+    backdrop-filter: blur(10px); */
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 50px; 
+        width: auto;
+    }
 }
