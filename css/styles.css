@@ -8,7 +8,9 @@ body {
     background-image: url('../assets/fundo.png');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;  
 }
 
 .navbar {
@@ -17,8 +19,9 @@ body {
     padding: 15px 20px;
     backdrop-filter: blur(10px);
     border-radius: 50px;
-    margin: 10px auto;
+    margin: 0px auto;
     display: flex;
+    position: relative;
 }
 
 .navbar-brand img {
@@ -74,10 +77,6 @@ body {
 .info-box {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-
-    /* deixa igual ao cabeçalho */
-    /* background-color: transparent !important;
-    backdrop-filter: blur(10px); */
     padding: 20px;
     border-radius: 15px;
     margin-top: 35%;
@@ -93,10 +92,6 @@ body {
 .footer-box {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-
-    /* deixa igual ao cabeçalho */
-    /* background-color: transparent !important;
-    backdrop-filter: blur(10px); */
     padding: 15px;
     border-radius: 15px;
     margin-top: 20px;
@@ -188,6 +183,92 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.game-intro {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(6px);
+    margin: 10px;
+    color: #ffffff00;
+    border: none;
+    border-radius: 50px;
+}
+.game-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.game-subtitle {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+.btn-start {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-start:hover {
+    background-color: #218838;
+}
+
+.game-info {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.catalog-section {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
+}
+
+.footer-box {
+    background: rgb(33, 156, 54);
+    margin: 0;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    display: grid;
+    font-size: 0.99rem;
+    border-radius: 0;
+}
+
+.footer-box a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.footer-box a:hover {
+    color: #127a54;
+    text-decoration: underline;
+}
+
+.footer-box .social-icons i {
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-box .social-icons i:hover {
+    transform: scale(1.2);
+    color: #a8e6cf;
+}
+
+.footer-box small {
+    display: block;
+    margin-top: 0;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+
 @media (max-width: 768px) {
     .navbar-brand img {
         max-height: 90px; 
@@ -198,7 +279,6 @@ body {
         margin: none;
         font-size: 24px;
     }
-
     .card img {
         height: 150px;
     }
