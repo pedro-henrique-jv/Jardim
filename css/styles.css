@@ -78,7 +78,7 @@ body {
     background: rgba(124, 124, 124, 0.11);
     padding: 20px;
     border-radius: 15px;
-    margin-top: 35%;
+    margin-top: 0%;
     color: white;
 }
 
@@ -100,7 +100,7 @@ body {
 
 
 .content {
-    padding-top: 120px;
+    padding-top: 10px;
 }
 
 .card {
@@ -274,6 +274,21 @@ body {
     margin: 0px;
     margin-top: 0;
 }
+
+
+.info-adicionais {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    /* deixa igual ao cabeçalho */
+    /* background-color: transparent !important;
+    backdrop-filter: blur(10px); */
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
 
 .location-section {
     background: rgba(124, 124, 124, 0.11); 
