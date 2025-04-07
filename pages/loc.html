@@ -6,14 +6,14 @@
     <title>Jardim Botânico UFSM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="background">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/logo_jardim.png" alt="Logo">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo_jardim.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,9 +29,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="..\pages\sobre.html">Sobre</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="..\pages\loc.html">Como chegar</a>
-                        </li>
                         <li class="nav-item d-flex align-items-center">
                             <input type="text" id="search-input" class="form-control me-2" placeholder="Pesquisar...">
                             <button id="toggle-search" class="btn btn-lupa" type="button">
@@ -42,24 +39,24 @@
                 </div>
             </div>
         </nav>
-        <section class="game-intro text-center py-5">
+        <section class="location-section text-center py-5">
             <div class="container">
-                <h1 class="game-title text-light">ECOSCAN</h1>
-                <p class="game-subtitle text-light">Explore espécies, aprenda sobre a natureza e desvende os segredos do Jardim Botânico UFSM.</p>
-                <button class="btn btn-start mt-4 text-light">Começar aventura</button>
-                <div class="game-info mt-5 text-light">
-                    <p><strong>Plantas descobertas:</strong></p>
-                    <p style="text-decoration: underline; color: white;">Saiba mais</p>
-                </div>
-            </div>
-        </section>
-        <section class="catalog-section text-center py-5">
-            <div class="container">
-                <h2 class="text-light">Catálogo de Espécies</h2>
+                <h2 class="text-light">Como chegar</h2>
                 <p class="text-light mb-4">
-                    Acesse o catálogo completo de espécies do Jardim Botânico e descubra todas as plantas e animais disponíveis para exploração.
+                    Veja abaixo a localização do Jardim Botânico da UFSM e planeje sua visita com facilidade.
                 </p>
-                <a href="#" class="btn btn-outline-light">Ver Catálogo</a>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55438.857276927905!2d-53.733188!3d-29.721828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503b5fb8ce36ee5%3A0xa57b162c6dfaa433!2sJardim%20Bot%C3%A2nico%20de%20Santa%20Maria!5e0!3m2!1spt-BR!2sus!4v1744035935737!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="text-light m-1 text-justify"> 
+                    Endereço: Av. Roraima, 1000 – Camobi, Santa Maria – RS, 97105-900, Brasil
+                </p>
+                <p class="text-light m-1 text-justify"> 
+                    Entrada Principal: seguir em rua atrás do prédio 21. 
+                </p>
+                <p class="text-light m-1 text-justify"> 
+                    Entrada Secundária: na rotatória da BR-287 pegar entrada para Estrada Geral Pará Arroio do Sol até o destino. 
+                </p>
             </div>
         </section>
     </div>

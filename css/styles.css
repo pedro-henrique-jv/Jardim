@@ -17,7 +17,7 @@ body {
     width: 95%;
     background: rgba(124, 124, 124, 0.11) !important;
     padding: 10px 10px;
-    border-radius: 50px;
+    border-radius: 40px;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -266,7 +266,7 @@ body {
 }
 
 .text-blur {
-    background: rgba(124, 124, 124, 0.11) ;
+    background: rgba(124, 124, 124, 0.11);
     padding: 10px;
     border-radius: 15px;
     color: #fff;
@@ -274,6 +274,7 @@ body {
     margin: 0px;
     margin-top: 0;
 }
+
 
 .info-adicionais {
     background: rgba(255, 255, 255, 0.2);
@@ -288,6 +289,32 @@ body {
     margin-bottom: 20px;
     text-align: center;
     color: white;
+
+.location-section {
+    background: rgba(124, 124, 124, 0.11); 
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border-radius: 12px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
