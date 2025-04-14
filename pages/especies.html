@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon"> 
+    <title>Jardim Botânico UFSM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="background">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo_jardim.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="..\pages\especies.html">Espécies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="..\pages\agendamento.html">Agendamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="..\pages\sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="..\pages\loc.html">Como chegar</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <input type="text" id="search-input" class="form-control me-2" placeholder="Pesquisar...">
+                            <button id="toggle-search" class="btn btn-lupa" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-5">
+            <div class="container my-5">
+                <h2 class="text-center text-light mb-4">Plantas</h2>
+                <div id="carouselPlantas" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="../assets/plantas/achna.jpg" class="d-block mx-auto img-fluid" alt="Planta 1">
+                            <p class="text-light mt-2">Descrição da planta 1</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/plantas/bahina-variegata.jpg" class="d-block mx-auto img-fluid" alt="Planta 2">
+                            <p class="text-light mt-2">Descrição da planta 2</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/plantas/jeriva.jpg" class="d-block mx-auto img-fluid" alt="Planta 3">
+                            <p class="text-light mt-2">Descrição da planta 3</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/plantas/pinus.jpg" class="d-block mx-auto img-fluid" alt="Planta 4">
+                            <p class="text-light mt-2">Descrição da planta 4</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlantas" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPlantas" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>            
+        </div>
+        <div class="container my-5">
+            <div class="container my-5">
+                <h2 class="text-center text-light mb-4">Animais</h2>
+                <div id="carouselAnimais" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="../assets/animais/bugiu.jpg" class="d-block mx-auto img-fluid" alt="Animal 1">
+                            <p class="text-light mt-2">Descrição do animal 1</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/colaptes.jpg" class="d-block mx-auto img-fluid" alt="Animal 2">
+                            <p class="text-light mt-2">Descrição do animal 2</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/coruja.jpg" class="d-block mx-auto img-fluid" alt="Animal 3">
+                            <p class="text-light mt-2">Descrição do animal 3</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/cruzeira.jpg" class="d-block mx-auto img-fluid" alt="Animal 4">
+                            <p class="text-light mt-2">Descrição do animal 4</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/dasypus.jpg" class="d-block mx-auto img-fluid" alt="Animal 5">
+                            <p class="text-light mt-2">Descrição do animal 5</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/graxaim.jpg" class="d-block mx-auto img-fluid" alt="Animal 6">
+                            <p class="text-light mt-2">Descrição do animal 6</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/jacare.jpg" class="d-block mx-auto img-fluid" alt="Animal 7">
+                            <p class="text-light mt-2">Descrição do animal 7</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/quero-quero.jpg" class="d-block mx-auto img-fluid" alt="Animal 8">
+                            <p class="text-light mt-2">Descrição do animal 8</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/teiu.jpg" class="d-block mx-auto img-fluid" alt="Animal 9">
+                            <p class="text-light mt-2">Descrição do animal 9</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/animais/tigre_dagua.jpg" class="d-block mx-auto img-fluid" alt="Animal 10">
+                            <p class="text-light mt-2">Descrição do animal 10</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAnimais" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAnimais" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>            
+            <div class="container my-0 mt-5">
+                <h2 class="text-center text-light mb-4">Fungos</h2>
+                <div id="carouselFungos" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="../assets/fungos/Amanita_muscaria.jpg" class="d-block mx-auto img-fluid" alt="Fungo 1">
+                            <p class="text-light mt-2">Descrição do fungo 1</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/fungos/Cryptotrama_aspartata.jpg" class="d-block mx-auto img-fluid" alt="Fungo 2">
+                            <p class="text-light mt-2">Descrição do fungo 2</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/fungos/cymatoderma-caperatum.jpg" class="d-block mx-auto img-fluid" alt="Fungo 3">
+                            <p class="text-light mt-2">Descrição do fungo 3</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="../assets/fungos/kusaghiporia_talpae.jpg" class="d-block mx-auto img-fluid" alt="Fungo 4">
+                            <p class="text-light mt-2">Descrição do fungo 4</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFungos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFungos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>            
+        </div>   
+        <footer class="footer-box">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <p><i class="bi bi-envelope"></i> contato@jardimbotanico.ufsm.br</p>
+                        <p><i class="bi bi-geo-alt"></i> Av. Roraima, 1000 - Camobi, Santa Maria - RS</p>
+                        <p><i class="bi bi-clock"></i> Funcionamento: Segunda á Sexta: 8:30h - 12h, 13:30h - 17h</p>
+                        <div class="social-icons mt-3">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+        
+                        <small class="mt-4 d-block">© 2025 Jardim Botânico UFSM - Todos os direitos reservados.</small>
+                    </div>
+                </div>
+            </div>
+        </footer>       
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

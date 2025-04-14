@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
     <title>Jardim Botânico UFSM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="background">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/logo_jardim.png" alt="Logo">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo_jardim.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,27 +43,28 @@
                 </div>
             </div>
         </nav>
-        <section class="game-intro text-center py-5">
-            <div class="container">
-                <h1 class="game-title text-light">ECOSCAN</h1>
-                <p class="game-subtitle text-light">Explore espécies, aprenda sobre a natureza e desvende os segredos do Jardim Botânico UFSM.</p>
-                <button class="btn btn-start mt-4 text-light">Começar aventura</button>
-                <div class="game-info mt-5 text-light">
-                    <p><strong>Plantas descobertas:</strong></p>
-                    <p style="text-decoration: underline; color: white;">Saiba mais</p>
+        <div class="agendamento-box">
+            <button class="btn-agendar" data-bs-toggle="collapse" data-bs-target="#menuVisita" aria-expanded="false" aria-controls="menuVisita">
+                Agendar Visita
+            </button>
+            <div class="card plant-card">
+                <div class="card-body">
+                    <h5 class="titulo-agendamento">Formulário de Agendamento de Visita</h5>
+                    <p>Escolha a data, horário, número de pessoas etc.</p>
                 </div>
             </div>
-        </section>
-        <section class="catalog-section text-center py-5">
-            <div class="container">
-                <h2 class="text-light">Catálogo de Espécies</h2>
-                <p class="text-light mb-4">
-                    Acesse o catálogo completo de espécies do Jardim Botânico e descubra todas as plantas e animais disponíveis para exploração.
-                </p>
-                <a href="/pages/especies.html" class="btn btn-outline-light">Ver Catálogo</a>
+            <button class="btn-agendar" data-bs-toggle="collapse" data-bs-target="#menuAuditorio" aria-expanded="false" aria-controls="menuAuditorio">
+                Agendar Auditório
+            </button>
+            <div class="card plant-card">
+                <div class="card-body">
+                    <h5 class="titulo-agendamento">Formulário de Agendamento de Auditório</h5>
+                    <p>Escolha a data, tempo de uso, recursos necessários etc.</p>
+                </div>
             </div>
-        </section>
-    </div>
+            <p class="text-center fs-5 mt-4 text-light" style="text-decoration: underline;">Orientações sobre agendamento</p>
+        </div> 
+    </div>       
     <footer class="footer-box">
         <div class="container">
             <div class="row justify-content-center">
