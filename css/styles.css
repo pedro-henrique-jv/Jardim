@@ -338,6 +338,17 @@ body {
     border-radius: 50px;
 }
 
+.news-section {
+    margin: 10px;
+    margin-bottom: 0;
+    border-radius: 50px;
+    background: rgba(124, 124, 124, 0.11); 
+}
+
+.news-section p {
+    font-size: 1.1rem;
+}
+
 @media (max-width: 768px) {
     .navbar-brand img {
         max-height: 90px; 
