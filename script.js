@@ -48,4 +48,27 @@ async function getSpeciesData(id) {
     }
 }
 
-window.onload = loadSpeciesData;
+window.onload = async () => {
+    await loadSpeciesData();
+
+    const origem = getURLParameter("src");
+    const especieId = getURLParameter("id");
+
+    if (origem === "qr") {
+        const coletarDiv = document.getElementById("coletar-container");
+        coletarDiv.style.display = "block";
+
+        const botao = document.getElementById("btn-coletar");
+        botao.addEventListener("click", async () => {
+            const res = await fetch("pegar_planta.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ especie_id: especieId })
+            });
+
+            const dados = await res.json();
+            document.getElementById("msg-coleta").textContent = dados.mensagem;
+        });
+    }
+};
+
