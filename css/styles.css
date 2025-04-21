@@ -190,6 +190,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     font-family: 'Orbitron', sans-serif;
+    border-bottom: 2px solid #4caf50;
 }
 
 .game-subtitle {
@@ -221,7 +222,6 @@ body {
     border-radius: 50px;
     padding: 5px;
     margin: 10px;
-    margin-bottom: 0;
     font-size: 1.0rem;
 }
 
@@ -278,9 +278,44 @@ body {
 .location-section {
     background: rgba(124, 124, 124, 0.11); 
     margin: 10px;
-    margin-top: 30px;
     border-radius: 50px;
-    margin-bottom: 0;
+}
+
+.login-section {
+    background-color: rgba(124, 124, 124, 0.11);
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+
+.login-section h2 {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4caf50;
+}
+
+.login-section .btn-primary {
+    background-color:#28a745;
+    border: none;
+    padding: 12px 0;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.login-section .btn-primary:hover {
+    background-color: #28a745;
+}
+
+.login-section input.form-control {
+    padding: 15px; 
+    font-size: 1.1rem; 
+    height: 50px;
+    border-radius: 10px;
+}
+
+.login-section input.form-control:focus {
+    border-color: transparent; 
+    box-shadow: none; 
 }
 
 .map-responsive {
@@ -352,6 +387,168 @@ h2 {
     border-bottom: none; 
 }
 
+#userDropdown {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+#userDropdown:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 24px;
+}
+
+#especie-container {
+    background-color: rgba(124, 124, 124, 0.11); 
+    border-radius: 50px;
+    box-shadow: none rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+#especie-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#especie-container h4 {
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+#especie-container img {
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#especie-container .lead {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+#especie-container .small {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+#especie-container .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#especie-container .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+#noticias {
+    background-color: rgba(124, 124, 124, 0.11); 
+    margin: auto;
+    padding-top: 10px;
+    border-radius:10px; 
+}
+
+.noticias-section {
+    background-color: rgba(124, 124, 124, 0.11); 
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.noticias-section h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.noticias-section .list-group-item {
+    background-color: #4e4e4e6c;
+    border: 1px solid #44444400;
+    border-radius: 10px;
+}
+
+.catalogo {
+    background-color: rgba(124, 124, 124, 0.11); 
+    padding: 3rem 2rem; 
+    border-radius: 50px;
+    margin: 5rem auto;
+    max-width: 1000px; 
+    width: 100%;
+}
+
+.catalogo h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.catalogo button.btn {
+    background-color: #4caf50;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+}
+
+.catalogo button.btn:hover {
+    background-color: #4caf50;
+    color: #000;
+}
+
+.catalogo .list-group-item {
+    background-color: #ffffffb6;
+    border: 1px solid #c0c0c0;
+    color: #fff;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border-radius: 8px;
+}
+
+.catalogo .list-group-item:hover {
+    background-color: #2f2f2f;
+    transform: translateX(5px);
+}
+
+.catalogo .list-group-item a {
+    color: #4caf50;
+    font-weight: 500;
+}
+
+.catalogo .list-group-item a:hover {
+    text-decoration: underline;
+    color: #81c784;
+}
+
+.catalogo .fst-italic.text-muted {
+    color: #000000 !important;
+}
 
 @media (max-width: 768px) {
     .navbar-brand img {

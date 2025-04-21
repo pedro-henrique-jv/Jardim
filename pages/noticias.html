@@ -16,6 +16,15 @@
                 <a class="navbar-brand" href="../index.html">
                     <img src="../assets/logo_jardim.png" alt="Logo">
                 </a>
+                <div class="dropdown ms-auto me-2 d-flex align-items-center">
+                    <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person fs-1"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="..\pages\login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="..\pages\cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,30 +52,25 @@
                 </div>
             </div>
         </nav>
-
-        <section class="container my-5" id="noticias">
-            <h2 class="mb-4 text-center text-light">Últimas Notícias</h2>
-            <div class="list-group">
-                <div class="list-group-item">
-                    <h5 class="mb-1"><a href="#" class="text-decoration-underline text-dark" target="_blank">Nova espécie é catalogada no Jardim Botânico</a></h5>
-                    <p class="mb-1">Pesquisadores da UFSM identificaram uma nova espécie nativa no ecossistema do Jardim Botânico, reforçando a importância da preservação ambiental.</p>
-                    <small class="text-muted">Publicado em: 10 de abril de 2025</small>
-                </div>
-        
-                <div class="list-group-item">
-                    <h5 class="mb-1"><a href="#" class="text-decoration-underline text-dark" target="_blank">Agendamentos para visitas escolares estão abertos</a></h5>
-                    <p class="mb-1">A partir de agora, escolas podem agendar visitas guiadas ao Jardim Botânico diretamente pelo site.</p>
-                    <small class="text-muted">Publicado em: 2 de abril de 2025</small>
-                </div>
-        
-                <div class="list-group-item">
-                    <h5 class="mb-1"><a href="#" class="text-decoration-underline text-dark" target="_blank">Semana do Meio Ambiente contará com eventos especiais</a></h5>
-                    <p class="mb-1">Durante a Semana do Meio Ambiente, o Jardim Botânico oferecerá palestras, trilhas ecológicas e oficinas para todas as idades.</p>
-                    <small class="text-muted">Publicado em: 27 de março de 2025</small>
+        <section class="noticias-section text-center py-">
+            <div class="container">
+                <h2 class="text-light mb-4" style="font-size: 2rem;">Últimas Notícias</h2>
+                <div class="list-group">
+                    <div class="list-group-item text-light border-light mb-3 rounded-3 p-4">
+                        <h5 class="mb-2">
+                            <a href="#" class="text-decoration-underline text-light" target="_blank">
+                                Nova espécie é catalogada no Jardim Botânico
+                            </a>
+                        </h5>
+                        <p class="mb-1">
+                            Pesquisadores da UFSM identificaram uma nova espécie nativa no ecossistema do Jardim Botânico, reforçando a importância da preservação ambiental.
+                        </p>
+                        <small class="text-muted">Publicado em: 10 de abril de 2025</small>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
         <footer class="footer-box">
             <div class="container">
                 <div class="row justify-content-center">
