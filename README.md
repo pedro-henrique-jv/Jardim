@@ -41,10 +41,7 @@ Este projeto visa não só ser uma fonte de informações sobre o Jardim Botâni
 
 
 
-#SQL
-
-
-
+# SQL
 
 
 CREATE DATABASE jardim_botanico;
