@@ -37,3 +37,41 @@ Este projeto consiste em um **site interativo** dedicado ao Jardim Botânico, co
 - **Promoção e Divulgação**: Facilitar a divulgação das atividades, eventos e atualizações do Jardim Botânico por meio do site e das redes sociais.
 
 Este projeto visa não só ser uma fonte de informações sobre o Jardim Botânico, mas também proporcionar uma experiência lúdica e educativa para os visitantes, aumentando o interesse e a interação com a natureza.
+
+
+
+
+#SQL
+
+
+
+
+
+CREATE DATABASE jardim_botanico;
+
+USE jardim_botanico;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE usuarios ADD nome VARCHAR(100) NOT NULL AFTER id;
+
+CREATE TABLE plantas_pegas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    especie_id VARCHAR(100) NOT NULL,
+    pontos INT DEFAULT 10,
+    data_coleta TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT fk_usuario FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+    UNIQUE (usuario_id, especie_id) -- impede pegar a mesma planta duas vezes
+);
+
+
+
+
+
