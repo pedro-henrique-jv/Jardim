@@ -275,22 +275,6 @@ body {
     margin-top: 0;
 }
 
-
-.info-adicionais {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-
-    /* deixa igual ao cabeçalho */
-    /* background-color: transparent !important;
-    backdrop-filter: blur(10px); */
-    padding: 15px;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: white;
-}
-
 .location-section {
     background: rgba(124, 124, 124, 0.11); 
     margin: 10px;
@@ -320,34 +304,54 @@ body {
     text-align: justify;
 }
 
-.agendamento-box {
-    display: grid;
-    margin: 10px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    gap: 10px;
-    
-}
-
-.btn-agendar {
-    background-color: #28a745;
+.btn-outline-light {
+    background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
-    padding: 10px;
-    font-size: 22px;
+    border-color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    border-radius: 50px;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #2b4d2b;
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2b4d2b;
+    font-weight: 500;
     border: none;
-    border-radius: 50px;
+    border-radius: 0;
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.3s ease;
 }
 
-.news-section {
-    margin: 10px;
-    margin-bottom: 0;
-    border-radius: 50px;
-    background: rgba(124, 124, 124, 0.11); 
+.list-group-item:hover {
+    background-color: #e2f0e2;
 }
 
-.news-section p {
-    font-size: 1.1rem;
+.list-group-item .fst-italic {
+    font-size: 0.95rem;
+    color: #6c757d;
+    font-weight: 400;
 }
+
+h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.list-group-item {
+    border-bottom: 1px solid #ccc; 
+}
+
+.list-group-item:last-child {
+    border-bottom: none; 
+}
+
 
 @media (max-width: 768px) {
     .navbar-brand img {

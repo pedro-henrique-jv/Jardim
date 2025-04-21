@@ -22,16 +22,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="..\pages\especies.html">Espécies</a>
+                            <a class="nav-link" href="../pages/especies.html">Espécies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="..\pages\agendamento.html">Agendamentos</a>
+                            <a class="nav-link" href="../pages/loc.html">Como chegar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="..\pages\sobre.html">Sobre</a>
+                            <a class="nav-link" href="../pages/noticias.html">Notícias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="..\pages\loc.html">Como chegar</a>
+                            <a class="nav-link" href="../pages/sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                             <input type="text" id="search-input" class="form-control me-2" placeholder="Pesquisar...">
@@ -43,140 +43,77 @@
                 </div>
             </div>
         </nav>
+
         <div class="container my-5">
-            <div class="container my-5">
-                <h2 class="text-center text-light mb-4">Plantas</h2>
-                <div id="carouselPlantas" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active text-center">
-                            <img src="../assets/plantas/achna.jpg" class="d-block mx-auto img-fluid" alt="Planta 1">
-                            <p class="text-light mt-2">Descrição da planta 1</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/plantas/bahina-variegata.jpg" class="d-block mx-auto img-fluid" alt="Planta 2">
-                            <p class="text-light mt-2">Descrição da planta 2</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/plantas/jeriva.jpg" class="d-block mx-auto img-fluid" alt="Planta 3">
-                            <p class="text-light mt-2">Descrição da planta 3</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/plantas/pinus.jpg" class="d-block mx-auto img-fluid" alt="Planta 4">
-                            <p class="text-light mt-2">Descrição da planta 4</p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlantas" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPlantas" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+            <h2 class="text-center text-light mb-4">Espécies</h2>
+        
+            <div class="mb-3">
+                <button class="btn btn-outline-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#animais">
+                    🐾 Animais
+                </button>
+                <div class="collapse mt-2" id="animais">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=vanellus-chilensis" class="text-decoration-none text-dark">Quero-quero <span class="fst-italic text-muted">(Vanellus chilensis)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=colaptes-melanochloros" class="text-decoration-none text-dark">Pica-pau <span class="fst-italic text-muted">(Colaptes melanochloros)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=lycalopex-gymnocercus" class="text-decoration-none text-dark">Graxaim <span class="fst-italic text-muted">(Lycalopex gymnocercus)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=trachemys-dorbigni" class="text-decoration-none text-dark">Tigre-d’água <span class="fst-italic text-muted">(Trachemys dorbigni)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=caiman-latirostris" class="text-decoration-none text-dark">Jacaré-do-papo amarelo <span class="fst-italic text-muted">(Caiman latirostris)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=alouatta-guariba" class="text-decoration-none text-dark">Bugio <span class="fst-italic text-muted">(Allouatta guariba)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=dasypus-hybridus" class="text-decoration-none text-dark">Tatu molita <span class="fst-italic text-muted">(Dasypus hybridus)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=salvator-merianae" class="text-decoration-none text-dark">Teiú <span class="fst-italic text-muted">(Salvator merianae)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=athene-cunicularia" class="text-decoration-none text-dark">Coruja buraqueira <span class="fst-italic text-muted">(Athene cunicularia)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=bothrops-alternatus" class="text-decoration-none text-dark">Cruzeira <span class="fst-italic text-muted">(Bothrops alternatus)</span></a></li>
+                    </ul>                    
                 </div>
-            </div>            
-        </div>
-        <div class="container my-5">
-            <div class="container my-5">
-                <h2 class="text-center text-light mb-4">Animais</h2>
-                <div id="carouselAnimais" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active text-center">
-                            <img src="../assets/animais/bugiu.jpg" class="d-block mx-auto img-fluid" alt="Animal 1">
-                            <p class="text-light mt-2">Descrição do animal 1</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/colaptes.jpg" class="d-block mx-auto img-fluid" alt="Animal 2">
-                            <p class="text-light mt-2">Descrição do animal 2</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/coruja.jpg" class="d-block mx-auto img-fluid" alt="Animal 3">
-                            <p class="text-light mt-2">Descrição do animal 3</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/cruzeira.jpg" class="d-block mx-auto img-fluid" alt="Animal 4">
-                            <p class="text-light mt-2">Descrição do animal 4</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/dasypus.jpg" class="d-block mx-auto img-fluid" alt="Animal 5">
-                            <p class="text-light mt-2">Descrição do animal 5</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/graxaim.jpg" class="d-block mx-auto img-fluid" alt="Animal 6">
-                            <p class="text-light mt-2">Descrição do animal 6</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/jacare.jpg" class="d-block mx-auto img-fluid" alt="Animal 7">
-                            <p class="text-light mt-2">Descrição do animal 7</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/quero-quero.jpg" class="d-block mx-auto img-fluid" alt="Animal 8">
-                            <p class="text-light mt-2">Descrição do animal 8</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/teiu.jpg" class="d-block mx-auto img-fluid" alt="Animal 9">
-                            <p class="text-light mt-2">Descrição do animal 9</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/animais/tigre_dagua.jpg" class="d-block mx-auto img-fluid" alt="Animal 10">
-                            <p class="text-light mt-2">Descrição do animal 10</p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAnimais" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAnimais" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+            </div>
+        
+            <div class="mb-3">
+                <button class="btn btn-outline-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#plantas">
+                    🌿 Plantas
+                </button>
+                <div class="collapse mt-2" id="plantas">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=syagrus-romanzoffiana" class="text-decoration-none text-dark">Jerivá <span class="fst-italic text-muted">(Syagrus romanzoffiana)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=bauhinia-variegata" class="text-decoration-none text-dark">Bauhinia <span class="fst-italic text-muted">(Bauhinia variegata)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=pinus-sp" class="text-decoration-none text-dark">Pinus <span class="fst-italic text-muted">(Pinus sp.)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=ochna-serrulata" class="text-decoration-none text-dark">Ochna <span class="fst-italic text-muted">(Ochna serrulata)</span></a></li>
+                    </ul>                    
                 </div>
-            </div>            
-            <div class="container my-0 mt-5">
-                <h2 class="text-center text-light mb-4">Fungos</h2>
-                <div id="carouselFungos" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active text-center">
-                            <img src="../assets/fungos/Amanita_muscaria.jpg" class="d-block mx-auto img-fluid" alt="Fungo 1">
-                            <p class="text-light mt-2">Descrição do fungo 1</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/fungos/Cryptotrama_aspartata.jpg" class="d-block mx-auto img-fluid" alt="Fungo 2">
-                            <p class="text-light mt-2">Descrição do fungo 2</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/fungos/cymatoderma-caperatum.jpg" class="d-block mx-auto img-fluid" alt="Fungo 3">
-                            <p class="text-light mt-2">Descrição do fungo 3</p>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="../assets/fungos/kusaghiporia_talpae.jpg" class="d-block mx-auto img-fluid" alt="Fungo 4">
-                            <p class="text-light mt-2">Descrição do fungo 4</p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFungos" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFungos" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+            </div>
+        
+            <div class="mb-3">
+                <button class="btn btn-outline-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#fungos">
+                    🍄 Fungos
+                </button>
+                <div class="collapse mt-2" id="fungos">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=amanita-muscaria" class="text-decoration-none text-dark">Amanita muscaria <span class="fst-italic text-muted">(Amanita muscaria)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=cymatoderma-caperatum" class="text-decoration-none text-dark">Cymatoderma caperatum <span class="fst-italic text-muted">(Cymatoderma caperatum)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=cryptotrama-asprata" class="text-decoration-none text-dark">Cryptotrama asprata <span class="fst-italic text-muted">(Cryptotrama asprata)</span></a></li>
+                        <li class="list-group-item"><a href="../pages/especies-individual.html?id=kusaghiporia-talpae" class="text-decoration-none text-dark">Kusaghiporia talpae <span class="fst-italic text-muted">(Kusaghiporia talpae)</span></a></li>
+                    </ul>                    
                 </div>
-            </div>               
-            <footer class="footer-box">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <p><i class="bi bi-envelope"></i> contato@jardimbotanico.ufsm.br</p>
-                            <p><i class="bi bi-geo-alt"></i> Av. Roraima, 1000 - Camobi, Santa Maria - RS</p>
-                            <p><i class="bi bi-clock"></i> Funcionamento: Segunda á Sexta: 8:30h - 12h, 13:30h - 17h</p>
-                            <div class="social-icons mt-3">
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-youtube"></i></a>
-                            </div>
-            
-                            <small class="mt-4 d-block">© 2025 Jardim Botânico UFSM - Todos os direitos reservados.</small>
+            </div>
+        </div>   
+        <footer class="footer-box">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <p><i class="bi bi-envelope"></i> contato@jardimbotanico.ufsm.br</p>
+                        <p><i class="bi bi-geo-alt"></i> Av. Roraima, 1000 - Camobi, Santa Maria - RS</p>
+                        <p><i class="bi bi-clock"></i> Funcionamento: Segunda à Sexta: 8:30h - 12h, 13:30h - 17h</p>
+                        <div class="social-icons mt-3">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
                         </div>
+                        <small class="mt-4 d-block">© 2025 Jardim Botânico UFSM - Todos os direitos reservados.</small>
                     </div>
                 </div>
-            </footer>       
-        </div>
-    </div>  
+            </div>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
