@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,47 +16,7 @@
 </head>
 <body>
     <div class="background">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/logo_jardim.png" alt="Logo">
-                </a>
-                <div class="dropdown ms-auto me-2 d-flex align-items-center">
-                    <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person fs-1"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="..\pages\login.html">Login</a></li>
-                        <li><a class="dropdown-item" href="..\pages\cadastro.html">Cadastre-se</a></li>
-                    </ul>
-                </div>                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto gap-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="..\pages\especies.html">Espécies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="..\pages\loc.html">Como chegar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="..\pages\noticias.html">Notícias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="..\pages\sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item d-flex align-items-center">
-                            <input type="text" id="search-input" class="form-control me-2" placeholder="Pesquisar...">
-                            <button id="toggle-search" class="btn btn-lupa" type="button">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <?php include('../navbar.php'); ?>
         
         <section class="location-section text-center py-5">
             <div class="container">
