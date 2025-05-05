@@ -550,6 +550,47 @@ h2 {
     color: #000000 !important;
 }
 
+.tutorial-box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 1000;
+    margin: 10px;
+}
+
+.tutorial-box .mascot img {
+    background-color: rgba(255, 255, 255, 0.877);
+    border-radius: 50px;
+    width: 100px;
+}
+
+.speech-bubble {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 400px;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 2px 2px 10px #00000040;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.progress {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    font-weight: bold;
+  }
+
 @media (max-width: 768px) {
     .navbar-brand img {
         max-height: 90px; 

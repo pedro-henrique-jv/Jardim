@@ -20,9 +20,18 @@ session_start();
             <div class="container">
                 <h1 class="game-title text-light">ECOSCAN</h1>
                 <p class="game-subtitle text-light">Explore espécies, aprenda sobre a natureza e desvende os segredos do Jardim Botânico UFSM.</p>
-                <button class="btn btn-start mt-4 text-light">Começar aventura</button>
-                <div class="game-info mt-5 text-light">
-                    <p><strong>Plantas descobertas:</strong></p>
+                <div class="text-center mt-4 d-flex flex-column align-items-center">
+                    <a href="pages/aventura.php" class="btn btn-success text-light d-block mb-4 fs-2 rounded-pill">Começar Aventura</a>
+                    <button id="btn-tutorial" class="btn btn-success text-light d-block mb-3 fs-5 rounded-pill">Como Jogar?</button>
+                </div>
+                <div id="tutorial-container" class="tutorial-box d-none">
+                    <div class="mascot">
+                        <img src="../assets/jerivaldo.png" alt="Mascote do Jardim" />
+                    </div>
+                    <div class="speech-bubble">
+                        <p id="tutorial-text">Olá explorador! Eu sou o mascote do Jardim Botânico!</p>
+                        <button id="next-tutorial" class="btn btn-sm btn-success mt-2">Próximo</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -55,5 +64,31 @@ session_start();
         </footer>
     </div>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const tutorial = [
+        "Olá explorador! Eu sou o mascote do Jardim Botânico!",
+        "Neste jogo, você pode explorar áreas como a floresta, lago, e estufa.",
+        "Descubra espécies únicas e ganhe conquistas incríveis!",
+        "Acompanhe seu progresso no álbum de descobertas.",
+        "Boa sorte e divirta-se explorando a natureza!",
+    ];
+
+    let currentStep = 0;
+
+    document.getElementById('btn-tutorial').addEventListener('click', () => {
+        currentStep = 0;
+        document.getElementById('tutorial-text').textContent = tutorial[currentStep];
+        document.getElementById('tutorial-container').classList.remove('d-none');
+    });
+
+    document.getElementById('next-tutorial').addEventListener('click', () => {
+        currentStep++;
+        if (currentStep < tutorial.length) {
+            document.getElementById('tutorial-text').textContent = tutorial[currentStep];
+        } else {
+            document.getElementById('tutorial-container').classList.add('d-none');
+        }
+    });
+    </script>
 </body>
 </html>
