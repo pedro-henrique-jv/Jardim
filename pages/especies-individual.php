@@ -18,12 +18,11 @@ session_start();
     <div class="background">
         <?php include('../navbar.php'); ?>
         <main class="container pt-3 text-light">
-            <div id="especie-container" class="text-center">
+            <div id="especie-container" class=" mx-auto text-center">
                 <h1 id="nome-popular"></h1>
                 <h4 class="text-muted" id="nome-cientifico"></h4>
                 <img id="imagem" class="img-fluid my-3" alt="Imagem da espécie">
                 <p id="descricao" class="lead"></p>
-                <p id="fonte" class="small"></p>
                 <a href="especies.php" class="btn btn-secondary mt-3">Voltar</a>
             </div>
         </main>

@@ -11,7 +11,7 @@ session_start();
     <title>Jardim Botânico UFSM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="background">
@@ -29,7 +29,7 @@ session_start();
                         <img src="../assets/jerivaldo.png" alt="Mascote do Jardim" />
                     </div>
                     <div class="speech-bubble">
-                        <p id="tutorial-text">Olá explorador! Eu sou o mascote do Jardim Botânico!</p>
+                        <p id="tutorial-text">Olá explorador! Meu nome é Jerivaldo, eu sou o mascote do Jardim Botânico!</p>
                         <button id="next-tutorial" class="btn btn-sm btn-success mt-2">Próximo</button>
                     </div>
                 </div>
@@ -66,11 +66,11 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
     const tutorial = [
-        "Olá explorador! Eu sou o mascote do Jardim Botânico!",
-        "Neste jogo, você pode explorar áreas como a floresta, lago, e estufa.",
-        "Descubra espécies únicas e ganhe conquistas incríveis!",
-        "Acompanhe seu progresso no álbum de descobertas.",
-        "Boa sorte e divirta-se explorando a natureza!",
+    "Oi, explorador! Eu sou o Jerivaldo, mascote do Jardim Botânico, e tô aqui pra te acompanhar nessa aventura incrível! Bora?",
+    "Depois de criar sua conta, é só escanear os QR Codes espalhados pelo jardim e testar o quanto você sabe sobre a natureza.",
+    "Acertou? Você ganha pontos e a descoberta vai direto pro seu álbum, onde pode ver todo seu progresso.",
+    "Errou? Relaxa, pode tentar de novo!",
+    "Bora lá! Divirta-se e aproveite pra aprender muito sobre o mundo natural!"
     ];
 
     let currentStep = 0;

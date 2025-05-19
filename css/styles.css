@@ -222,6 +222,7 @@ body {
     border-radius: 50px;
     padding: 5px;
     margin: 10px;
+    margin-bottom: 0;
     font-size: 1.0rem;
 }
 
@@ -454,7 +455,7 @@ h2 {
 }
 
 #especie-container .btn-secondary:hover {
-    background-color: #5a6268;
+    background-color: #94a2ac;
 }
 
 #noticias {
@@ -532,7 +533,7 @@ h2 {
 }
 
 .catalogo .list-group-item:hover {
-    background-color: #2f2f2f;
+    background-color: #808080;
     transform: translateX(5px);
 }
 
@@ -591,6 +592,40 @@ h2 {
     font-weight: bold;
   }
 
+.btn-voltar {
+    display: inline-block;
+    background-color: #127a54;
+    color: white;
+    padding: 14px 32px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    margin-bottom:60px;
+}
+
+.btn-voltar:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    color: white;
+}
+
+.container-descobertas {
+    background-color: rgba(124, 124, 124, 0.11); 
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.container-aventura {
+    background-color: rgba(124, 124, 124, 0.11); 
+    margin: 10px;
+    border-radius: 50px;
+}
+
 @media (max-width: 768px) {
     .navbar-brand img {
         max-height: 90px; 
@@ -605,3 +640,4 @@ h2 {
         height: 150px;
     }
 }
+
