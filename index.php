@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
     <title>Jardim Botânico UFSM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -21,7 +21,10 @@ session_start();
                 <h1 class="game-title text-light">ECOSCAN</h1>
                 <p class="game-subtitle text-light">Explore espécies, aprenda sobre a natureza e desvende os segredos do Jardim Botânico UFSM.</p>
                 <div class="text-center mt-4 d-flex flex-column align-items-center">
-                    <a href="pages/aventura.php" class="btn btn-success text-light d-block mb-4 fs-2 rounded-pill">Começar Aventura</a>
+                    <?php
+                    $aventuraHref = isset($_SESSION['nome']) ? '../pages/aventura.php' : '../pages/login.php';
+                    ?>
+                    <a href="<?= $aventuraHref ?>" class="btn btn-success text-light d-block mb-4 fs-2 rounded-pill">Começar Aventura</a>
                     <button id="btn-tutorial" class="btn btn-success text-light d-block mb-3 fs-5 rounded-pill">Como Jogar?</button>
                 </div>
                 <div id="tutorial-container" class="tutorial-box d-none">

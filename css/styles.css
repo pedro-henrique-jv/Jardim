@@ -406,6 +406,15 @@ h2 {
     font-size: 24px;
 }
 
+.dropdown-agendamentos {
+    min-width: 250px;
+    max-width: 300px;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 18px;
+    overflow: auto;
+}
+
 #especie-container {
     background-color: rgba(124, 124, 124, 0.11); 
     border-radius: 50px;

@@ -34,13 +34,17 @@
             <ul class="navbar-nav ms-auto gap-3">
                 <li class="nav-item"><a class="nav-link" href="/pages/especies<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Espécies</a></li>
                 <li class="nav-item"><a class="nav-link" href="/pages/loc<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Como chegar</a></li>
-                <li class="nav-item"><a class="nav-link" href="/pages/noticias<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Notícias</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/jardim-botanico/busca?q=&area=post&orderby=date&sites%5B%5D=363<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Notícias</a></li>
                 <li class="nav-item"><a class="nav-link" href="/pages/sobre<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Sobre</a></li>
-                <li class="nav-item d-flex align-items-center">
-                    <input type="text" id="search-input" class="form-control me-2" placeholder="Pesquisar...">
-                    <button id="toggle-search" class="btn btn-lupa" type="button">
-                        <i class="bi bi-search"></i>
-                    </button>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="agendamentosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Agendamentos
+                    </a>
+                    <ul class="dropdown-menu dropdown-agendamentos dropdown-menu-end" aria-labelledby="agendamentosDropdown">
+                        <li><a class="dropdown-item" href="https://www.ufsm.br/orgaos-suplementares/jardim-botanico/agendamentos">Agendamento de visitas</a></li>
+                        <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe2xFRbvxbFdM-xXKQg_d0kientawKO3y-Dz7Kx2N36M0Fwnw/viewform">Agendamento do Auditório</a></li>
+                        <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe2xFRbvxbFdM-xXKQg_d0kientawKO3y-Dz7Kx2N36M0Fwnw/viewform">Solicitações à Direção do JBSM</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
