@@ -30,6 +30,10 @@ session_start();
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Entrar</button>
                 </form>
+                <h3 class="text-center text-light m-4 fs-4">Ainda não tem conta?</h3>
+                <a href="../pages/cadastro.php">
+                    <button class="btn btn-primary w-100">Cadastre-se</button>
+                </a>
             </div>
         </section>
         <footer class="footer-box">

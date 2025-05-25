@@ -24,7 +24,7 @@ session_start();
                     <?php
                     $aventuraHref = isset($_SESSION['nome']) ? '../pages/aventura.php' : '../pages/login.php';
                     ?>
-                    <a href="<?= $aventuraHref ?>" class="btn btn-success text-light d-block mb-4 fs-2 rounded-pill">Começar Aventura</a>
+                    <a href="<?= $aventuraHref ?>" class="btn btn-success text-light d-block mb-4 fs-3 rounded-pill">Começar Aventura</a>
                     <button id="btn-tutorial" class="btn btn-success text-light d-block mb-3 fs-5 rounded-pill">Como Jogar?</button>
                 </div>
                 <div id="tutorial-container" class="tutorial-box d-none">

@@ -11,7 +11,7 @@
                 echo '<button class="btn btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">'
                     . htmlspecialchars($_SESSION['nome']) . '</button>';
                 echo '<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="pages/logout.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="../pages/logout.php">Logout</a></li>
                       </ul>';
             } else {
                 // Usuário não logado
