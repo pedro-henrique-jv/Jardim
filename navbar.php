@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="<?php echo isset($_SESSION['nome']) ? '/jardim/index.php' : '/jardim/index.php'; ?>">
-            <img src="../assets/logo_jardim.png" alt="Logo">
+            <img src="/jardim/assets/logo_jardim.png" alt="Logo">
         </a>
 
         <div class="dropdown ms-auto me-2 d-flex align-items-center">
@@ -11,7 +11,7 @@
                 echo '<button class="btn btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">'
                     . htmlspecialchars($_SESSION['nome']) . '</button>';
                 echo '<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="../pages/logout.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="/jardim/pages/logout.php">Logout</a></li>
                       </ul>';
             } else {
                 // Usuário não logado
@@ -19,8 +19,8 @@
                         <i class="bi bi-person fs-1"></i>
                       </button>';
                 echo '<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="/pages/login.php">Login</a></li>
-                        <li><a class="dropdown-item" href="/pages/cadastro.php">Cadastre-se</a></li>
+                        <li><a class="dropdown-item" href="/jardim/pages/login.php">Login</a></li>
+                        <li><a class="dropdown-item" href="/jardim/pages/cadastro.php">Cadastre-se</a></li>
                       </ul>';
             }
             ?>
@@ -32,10 +32,10 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto gap-3">
-                <li class="nav-item"><a class="nav-link" href="/pages/especies<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Espécies</a></li>
-                <li class="nav-item"><a class="nav-link" href="/pages/loc<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Como chegar</a></li>
+                <li class="nav-item"><a class="nav-link" href="/jardim/pages/especies<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Espécies</a></li>
+                <li class="nav-item"><a class="nav-link" href="/jardim/pages/loc<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Como chegar</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/jardim-botanico/busca?q=&area=post&orderby=date&sites%5B%5D=363<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Notícias</a></li>
-                <li class="nav-item"><a class="nav-link" href="/pages/sobre<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="/jardim/pages/sobre<?php echo isset($_SESSION['nome']) ? '.php' : '.php'; ?>">Sobre</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="agendamentosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Agendamentos

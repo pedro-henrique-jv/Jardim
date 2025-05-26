@@ -7,11 +7,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/jardim/assets/favicon.ico" type="image/x-icon">
     <title>Jardim Botânico UFSM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/jardim/css/styles.css">
 </head>
 <body>
     <div class="background">
@@ -22,14 +22,14 @@ session_start();
                 <p class="game-subtitle text-light">Explore espécies, aprenda sobre a natureza e desvende os segredos do Jardim Botânico UFSM.</p>
                 <div class="text-center mt-4 d-flex flex-column align-items-center">
                     <?php
-                    $aventuraHref = isset($_SESSION['nome']) ? '../pages/aventura.php' : '../pages/login.php';
+                    $aventuraHref = isset($_SESSION['nome']) ? '/jardim/pages/aventura.php' : '/jardim/pages/login.php';
                     ?>
                     <a href="<?= $aventuraHref ?>" class="btn btn-success text-light d-block mb-4 fs-3 rounded-pill">Começar Aventura</a>
                     <button id="btn-tutorial" class="btn btn-success text-light d-block mb-3 fs-5 rounded-pill">Como Jogar?</button>
                 </div>
                 <div id="tutorial-container" class="tutorial-box d-none">
                     <div class="mascot">
-                        <img src="../assets/jerivaldo.png" alt="Mascote do Jardim" />
+                        <img src="/jardim/assets/jerivaldo.png" alt="Mascote do Jardim" />
                     </div>
                     <div class="speech-bubble">
                         <p id="tutorial-text">Olá explorador! Meu nome é Jerivaldo, eu sou o mascote do Jardim Botânico!</p>
